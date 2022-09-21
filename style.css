@@ -1,0 +1,558 @@
+/* css for index home page */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-header {
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: url('image/background1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 3rem;
+}
+
+.head {
+    background-color: #14214d;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.head a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.toolbar-contact a {
+    font-size: 18px;
+}
+
+.toolbar-social a {
+    font-size: 18px;
+}
+
+.nav-bg {
+    background-color: #1f3377;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-logo img {
+    width: 140px;
+    height: 60px;
+}
+
+.nav-item a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.671);
+}
+
+.haderset {
+    padding-top: 160px;
+    box-sizing: border-box;
+}
+
+.haderset h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 1px 4px 4px black;
+    color: rgb(177 11 11);
+    background-color: #dae0e580;
+    margin: 0px;
+    padding: 0px;
+}
+
+.haderset p {
+    font-size: 22px;
+    font-weight: 700;
+    text-indent: 0.2rem;
+    text-align: justify;
+    color: #00114c;
+    background-color: #dae0e580;
+}
+
+/* heading close */
+
+.sec-head h1 {
+    font-size: 42px;
+    font-weight: bold;
+    /* padding-top: 15px; */
+    /* margin-top: 20px; */
+    text-align: center;
+    color: #1f3377;
+
+}
+
+.sec-head p {
+    font-size: 22px;
+    color: #1f3377;
+    font-weight: 500;
+}
+
+.full {
+    float: left;
+    width: 100%;
+}
+
+/* .image-card
+{
+    margin-bottom: 30px;
+} */
+.full img {
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.295);
+    margin-bottom: 20px;
+}
+
+.image-card h4 {
+    width: 85%;
+    /* background: #fff; */
+    margin: 5px;
+    text-align: center;
+    padding: 0px;
+    color: #1f3377;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.full a {
+    text-decoration: none;
+}
+
+
+.sec-second {
+    background-color: #eee;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.548);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.sec-2-im img {
+    margin-top: 2rem;
+    padding: 10px;
+    width: 100%;
+    height: 350px;
+}
+
+.text_emp {
+    color: #e0af14;
+    /* padding-top: 20px; */
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+}
+
+.sec-lp2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sec-head2 {
+    float: left;
+    display: flex;
+}
+
+.sec-head2 h2 {
+    font-size: 42px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    /* margin-bottom:30px; */
+    text-align: center;
+    color: #1f3377;
+}
+
+.full p {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+}
+
+.sec-third {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.sec-head3 {
+    width: 100%;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.sec-head3 h2 {
+    font-size: 42px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #1f3377;
+}
+
+.full p {
+    padding-top: 5px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.sec-fourth {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.sec-fifth {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.sec-abt h4 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.ab-im {
+    margin-top: 4.3rem;
+}
+
+/* footer css */
+.f-full {
+    padding: 10px 10px 10px 10px;
+}
+
+.f-foot {
+    background-color: #1f3377;
+    color: #fff;
+}
+
+.f-img-card img {
+    /* margin-top: 6px; */
+    margin: 0px;
+    padding: 1rem;
+    padding-top: 0px;
+    width: 150px;
+    height: 80px;
+    margin-left: 12.2rem;
+
+}
+
+@media screen and (max-width:700px) {
+    .f-img-card img {
+        /* margin-top: 6px; */
+        margin: 0px;
+        padding: 1rem;
+        padding-top: 0px;
+        width: 150px;
+        height: 80px;
+        margin-left: 9.9rem;
+    }
+}
+
+.f-abt p {
+    padding-left: 1rem;
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav-f-s {
+    margin-top: 6px;
+    padding: 1rem;
+}
+
+.f-abt-n h4 {
+    font-size: 24px;
+}
+
+.f-abt-n p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.f-nav ul, li {
+    list-style-type: none;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.f-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.f-nav a:hover {
+    padding-left: 15px;
+    font-size: 22px;
+}
+
+.f-toolbar-contact h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.f-toolbar-contact a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.f-toolbar-social h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.f-toolbar-social a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.f-address h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.f-address a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.f-nm {
+    background-color: #14214d;
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+}
+
+.f-nm p {
+    color: #fff;
+    text-align: center;
+}
+
+.f-map iframe {
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 100%;
+    height: 80%;
+    margin-top: 5px;
+}
+
+/* css for contact page */
+
+.contact {
+    padding: 1rem;
+    height: auto;
+}
+
+.c-full {
+    background-color: #ff9b00;
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.c-full h4 {
+    text-align: center;
+    color: #1f3377;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.603);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.c-details {
+    background-color: #1f3377;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.c-phn {
+    color: #fff;
+    /* padding-bottom: 15px; */
+}
+
+.c-phn h4 {
+    color: #1f3377;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+}
+
+.c-phn a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.c-side {
+    background: #ff9b00;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    color: #fff;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info h2, h4 {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.c-fom {
+    background-color: #eee;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form button {
+    color: #fff;
+    width: 25%;
+}
+
+.contact-form button:focus {
+    box-shadow: none;
+}
+
+.formerror 
+{
+    color: red;
+    font-size: 14px;
+}
+
+/*contact css end*/
+
+/*gallery page css */
+.section-first {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.g-head {
+    padding-bottom: 1rem;
+}
+
+.g-head h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: #1f3377;
+}
+
+/*gallery css end */
+
+
+/*Enroll page css */
+
+.e-sec-first {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.e-head {
+    background-color: #ff9b00;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.e-head h2 {
+    text-align: center;
+    font-size: 42px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.603);
+    font-weight: bold;
+    color: #1f3377;
+}
+
+.e-side {
+    background-image: url('image/enroll_logo.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ff9b00;
+    background-clip: border-box;
+    padding: 2rem 0rem 2rem 0rem;
+    margin-bottom: 7.4rem;
+}
+
+hr {
+    border: 1px solid #1f3377;
+}
+
+.e-fom {
+    background-color: #eee;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.e-fom label {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #1f3377;
+    color: #fff;
+}
+
+/*Enroll css end */
+
+/* study abroad css */
+
+.sec-study-a {
+
+    margin-bottom: 3rem;
+}
+
+/* study abroad css */
+
+/* work abroad css */
+
+.sec-work-a {
+
+    margin-bottom: 3rem;
+}
+
+/* work abroad css */
