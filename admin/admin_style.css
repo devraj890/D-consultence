@@ -74,10 +74,10 @@ body {
   color: #aaa;
 }
 .nav-link{
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 .nav-link:hover{
-    background:#f3f2f2;
+  background:#f3f2f2;
 }
 .text-primary{
     color:#7579e7 !important;
@@ -100,5 +100,8 @@ body {
 }
 
 /* full enroll css */
-
+p
+{
+  font-size: 22px;
+}
 /* full enroll css */
