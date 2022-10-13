@@ -1,4 +1,5 @@
 <?php
+$page = 'services';
 require "Layouts/common_header.php";
 ?>
 
