@@ -20,7 +20,7 @@ body {
 .top-header {
     width: 100%;
     background-size: 100% 100%;
-    background-image: url('image/background1.jpg');
+    background-image: url(../image/background1.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,6 +47,15 @@ body {
     font-size: 18px;
 }
 
+.toolbar-social img
+{
+    width: 30px;
+}
+.toolbar-contact img
+{
+    width: 28px;
+}
+
 .nav-bg {
     background-color: #1f3377;
     margin: 0px;
@@ -57,11 +66,15 @@ body {
     width: 140px;
     height: 60px;
 }
+.nav-item a
+{
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.671);
+}
 
 .nav-item a:hover {
     font-size: 20px;
-    font-weight: bold;
-    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.671);
 }
 
 .haderset {
@@ -533,7 +546,8 @@ hr {
 }
 
 .btn {
-    background-color: #1f3377;
+    /* background-color: #1f3377; */
+    border-radius: 5px;
     color: #fff;
 }
 

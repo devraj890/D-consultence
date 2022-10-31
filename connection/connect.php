@@ -1,5 +1,6 @@
 <?php
 
+$siteurl = "http://localhost/D-consulting/";
 $servername = "localhost";
 $username = "root";
 $password = "";

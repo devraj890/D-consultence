@@ -133,7 +133,7 @@
                 <button class="navbar-toggler navbar" type="button" data-toggle="collapse" data-target="#mynav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end mr-5" id="mynav">
+                <div class="collapse navbar-collapse justify-content-center mr-5" id="mynav">
                     <ul class="navbar-nav text-center ml-5">
                         <li class="nav-item <?php if ($page == 'home') {
                                                 echo 'active';
@@ -166,6 +166,17 @@
                             <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                     </ul>
+
+                    <div class="in-lg ml-5 pl-5">
+                        <a class="btn btn-primary btn-sm border-dark ml-4" href="#" role="button">
+                            <i class="fa-solid fa-user"></i>
+                            Sign-up
+                        </a>
+                        <a class="btn btn-primary btn-sm border-dark ml-4" href="#" role="button">
+                            <i class="fa-solid fa-user"></i>
+                            Log-in
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
