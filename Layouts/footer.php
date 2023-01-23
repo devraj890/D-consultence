@@ -51,7 +51,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact.php">
+                                    <a href="feedback.php">
                                         <i class="fas fa-angle-right"></i>
                                         Give us feedback
                                     </a>
@@ -127,7 +127,6 @@
         </footer>
 
         <!--Footer close-->
-
         </body>
 
         </html>

@@ -4,9 +4,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     overflow-x: hidden;
 }
@@ -47,14 +49,15 @@ body {
     font-size: 18px;
 }
 
-.toolbar-social img
+
+/* .toolbar-social img
 {
     width: 30px;
 }
 .toolbar-contact img
 {
     width: 28px;
-}
+} */
 
 .nav-bg {
     background-color: #1f3377;
@@ -66,8 +69,8 @@ body {
     width: 140px;
     height: 60px;
 }
-.nav-item a
-{
+
+.nav-item a {
     font-size: 18px;
     font-weight: bold;
     text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.671);
@@ -75,6 +78,21 @@ body {
 
 .nav-item a:hover {
     font-size: 20px;
+}
+
+.in-lg ul {
+    list-style-type: none;
+    display: inline;
+}
+
+.in-lg li {
+    list-style-type: none;
+    display: inline;
+}
+
+.in-lg h5 {
+    display: inline;
+    color: white;
 }
 
 .haderset {
@@ -101,6 +119,7 @@ body {
     background-color: #dae0e580;
 }
 
+
 /* heading close */
 
 .sec-head h1 {
@@ -110,7 +129,6 @@ body {
     /* margin-top: 20px; */
     text-align: center;
     color: #1f3377;
-
 }
 
 .sec-head p {
@@ -124,10 +142,12 @@ body {
     width: 100%;
 }
 
+
 /* .image-card
 {
     margin-bottom: 30px;
 } */
+
 .full img {
     padding: 10px;
     width: 100%;
@@ -151,7 +171,6 @@ body {
 .full a {
     text-decoration: none;
 }
-
 
 .sec-second {
     background-color: #eee;
@@ -249,7 +268,53 @@ body {
     margin-top: 4.3rem;
 }
 
+
+/*testimonial section css*/
+
+.testimonial {
+    background-image: url(../image/hands.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+}
+
+.testim-box {
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    margin: 3rem 0;
+    padding: 4rem;
+    background-color: rgba(204, 204, 204, 0.199);
+    border-radius: 2rem;
+}
+
+.testim-box h4 {
+    color: rgb(124, 27, 27);
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.555);
+    margin: 0;
+    padding: 0;
+}
+
+.testim-box h5 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.testim-box p {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* footer css */
+
 .f-full {
     padding: 10px 10px 10px 10px;
 }
@@ -267,10 +332,9 @@ body {
     width: 150px;
     height: 80px;
     margin-left: 12.2rem;
-
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
     .f-img-card img {
         /* margin-top: 6px; */
         margin: 0px;
@@ -302,7 +366,8 @@ body {
     text-align: justify;
 }
 
-.f-nav ul, li {
+.f-nav ul,
+li {
     list-style-type: none;
     margin-top: 12px;
     margin-bottom: 12px;
@@ -374,6 +439,7 @@ body {
     margin-top: 5px;
 }
 
+
 /* css for contact page */
 
 .contact {
@@ -444,7 +510,8 @@ body {
     margin-top: 10px;
 }
 
-.contact-info h2, h4 {
+.contact-info h2,
+h4 {
     margin-bottom: 5px;
     color: #fff;
 }
@@ -469,15 +536,17 @@ body {
     box-shadow: none;
 }
 
-.formerror 
-{
+.formerror {
     color: red;
     font-size: 14px;
 }
 
+
 /*contact css end*/
 
+
 /*gallery page css */
+
 .section-first {
     margin-top: 1rem;
     margin-bottom: 3rem;
@@ -493,6 +562,7 @@ body {
     font-weight: bold;
     color: #1f3377;
 }
+
 
 /*gallery css end */
 
@@ -551,22 +621,70 @@ hr {
     color: #fff;
 }
 
+
 /*Enroll css end */
+
 
 /* study abroad css */
 
 .sec-study-a {
-
     margin-bottom: 3rem;
 }
 
+
 /* study abroad css */
+
 
 /* work abroad css */
 
 .sec-work-a {
-
     margin-bottom: 3rem;
 }
 
+
 /* work abroad css */
+
+
+/*css for user signup*/
+
+.f-h-user h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: #1f3377;
+    padding: 1rem 0rem 1rem 0rem;
+    margin: 1rem 0rem 2rem 0rem;
+    text-shadow: 1px 1px 3px black;
+}
+
+.user-form {
+    background-image: url(../image/consulting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 1.6rem;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 2px 2px 4px black;
+}
+
+.user-form a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.user-form a:hover {
+    color: #1f3377;
+}
+
+@media screen and (max-width:768px) {
+    .user-form {
+        width: 100%;
+    }
+}

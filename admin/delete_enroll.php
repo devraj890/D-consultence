@@ -1,7 +1,12 @@
 <?php
 include "../connection/connect.php";
 
-session_start();
+//clear session start notice......
+error_reporting(E_ALL ^ E_NOTICE);
+// session_start();
+if (!isset($_SESSION)) {
+    session_start();
+} 
 
 $user = $_SESSION['username'];
 

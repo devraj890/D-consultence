@@ -1,3 +1,21 @@
+<?php
+include "connection/connect.php";
+
+//clear session start notice......
+error_reporting(E_ALL ^ E_NOTICE);
+
+// session_start();
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    $loggedin = true;
+} else {
+    $loggedin = false;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +33,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" integrity="sha512-Zofm3/rcTWulR1SqnrkCDKAs0A7ZVQHk+al10VOC0eo5sJBhMkKzA/RZOFC9JWiv4qqviYKYZ1sErzNs4BfLHA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
         * {
@@ -65,6 +83,7 @@
 
     <!--all bs Scripts-->
     <script src="js/jquery.min.js"></script>
+
     <!--link for jquery..-->
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -117,9 +136,9 @@
                 </div>
 
                 <div class="col-md-2 col-lg-2 col-sm-12">
-                    <a class="btn btn-primary btn-sm border-dark" href="admin/admin_login.php" role="button">
-                        <i class="fa-solid fa-user"></i>
-                        Login
+                    <a class="btn btn-primary btn-sm border-dark" href="<?php $siteurl ?>admin/admin_login.php" role="button">
+                        <i class="fa-sharp fa-solid fa-gears"></i>
+                        Admin
                     </a>
                 </div>
             </div>
@@ -137,45 +156,67 @@
                     <ul class="navbar-nav text-center ml-5">
                         <li class="nav-item <?php if ($page == 'home') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="index.php">Home</a>
                         </li>
                         <li class="nav-item <?php if ($page == 'services') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="services.php"> Services</a>
                         </li>
                         <li class="nav-item <?php if ($page == 'enroll') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="enroll.php">Enroll</a>
                         </li>
                         <li class="nav-item <?php if ($page == 'gallery') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="gallery.php">Gallery</a>
                         </li>
                         <li class="nav-item <?php if ($page == 'about') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="about.php">About</a>
                         </li>
                         <li class="nav-item <?php if ($page == 'contact') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="contact.php">Contact</a>
+                        </li>
+                        <li class="nav-item <?php if ($page == 'feedback') {
+                                                echo 'active';
+                                            } ?> ml-4">
+                            <a class="nav-link" href="<?php $siteurl ?>feedback.php">Feedback</a>
                         </li>
                     </ul>
 
-                    <div class="in-lg ml-5 pl-5">
-                        <a class="btn btn-primary btn-sm border-dark ml-4" href="#" role="button">
+                    <div class="in-lg ml-5 mt-2">
+                        <?php
+                        if (!$loggedin) {
+                            echo '<a class="btn btn-primary btn-sm border-dark mb-2" href="' . $siteurl . 'user_signup.php" role="button">
                             <i class="fa-solid fa-user"></i>
                             Sign-up
                         </a>
-                        <a class="btn btn-primary btn-sm border-dark ml-4" href="#" role="button">
-                            <i class="fa-solid fa-user"></i>
+                        <a class="btn btn-primary btn-sm border-dark ml-4 mb-2" href="' . $siteurl . 'user_login.php" role="button">
+                            <i class="fa-solid fa-right-to-bracket"></i>
                             Log-in
-                        </a>
+                        </a>';
+                        }
+                        if ($loggedin) {
+                        ?>
+                            <ul>
+                                <li>
+                                    <h5><?php echo $_SESSION['username']; ?></h5>
+                                </li>
+                            </ul>
+                        <?php
+                            echo '<a class="btn btn-primary btn-sm border-dark ml-3 mb-2" href="' . $siteurl . 'user_logout.php" role="button">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            Logout
+                        </a>';
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

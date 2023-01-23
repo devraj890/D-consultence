@@ -1,3 +1,22 @@
+<?php
+include "connection/connect.php";
+
+//clear session start notice......
+error_reporting(E_ALL ^ E_NOTICE);
+
+// session_start();
+if (!isset($_SESSION)) {
+    session_start();
+} 
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    $loggedin = true;
+} else {
+    $loggedin = false;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,29 +40,35 @@
             margin: 0px;
             padding: 0px;
         }
+
         body {
             box-sizing: border-box;
             margin: 0px;
             padding: 0px;
         }
+
         .c-head {
             background-color: #14214d;
             padding-top: 5px;
             padding-bottom: 5px;
         }
+
         .c-head a {
             text-decoration: none;
             color: #fff;
         }
+
         .c-nav-bg {
             background-color: #1f3377;
             margin: 0px;
             padding: 0px;
         }
+
         .nav-logo img {
             width: 140px;
             height: 60px;
         }
+
         .nav-item a:hover {
             font-size: 20px;
             font-weight: bold;
@@ -73,28 +98,28 @@
                 <div class="col-md-3 col-lg-3 col-sm-12">
                     <div class="toolbar-social">
                         <a href="#">
-                            <!-- <i class="fa-brands fa-facebook fa-lg ml-1 mr-1"></i> -->
-                            <img src="image/icons/facebook.png" alt="facebook">
+                            <i class="fa-brands fa-facebook fa-lg ml-1 mr-1"></i>
+                            <!-- <img src="image/icons/facebook.png" alt="facebook"> -->
                         </a>
                         <a href="#">
-                            <!-- <i class="fa-brands fa-square-instagram fa-lg ml-1 mr-1"></i> -->
-                            <img src="image/icons/instagram.png" alt="instagram">
+                            <i class="fa-brands fa-square-instagram fa-lg ml-1 mr-1"></i>
+                            <!-- <img src="image/icons/instagram.png" alt="instagram"> -->
                         </a>
                         <a href="#">
-                            <!-- <i class="fa-brands fa-linkedin fa-lg ml-1 mr-1"></i> -->
-                            <img src="image/icons/linkedin.png" alt="linkedin">
+                            <i class="fa-brands fa-linkedin fa-lg ml-1 mr-1"></i>
+                            <!-- <img src="image/icons/linkedin.png" alt="linkedin"> -->
                         </a>
                         <a href="#">
-                            <!-- <i class="fa-brands fa-square-twitter fa-lg ml-1 mr-1"></i> -->
-                            <img src="image/icons/twitter.png" alt="twitter">
+                            <i class="fa-brands fa-square-twitter fa-lg ml-1 mr-1"></i>
+                            <!-- <img src="image/icons/twitter.png" alt="twitter"> -->
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="toolbar-contact align-center">
                         <a href="mailto:info.dconsult@gmail.com">
-                            <!-- <i class="fa-solid fa-envelope"></i> -->
-                            <img src="image/icons/Gmail.png" alt="Gmail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <!-- <img src="image/icons/Gmail.png" alt="Gmail"> -->
                             info.dconsult@gmail.com
                         </a>
                     </div>
@@ -102,16 +127,16 @@
                 <div class="col-md-3 col-lg-3 col-sm-12">
                     <div class="toolbar-contact align-center">
                         <a href="tel:+919786543210 ">
-                            <!-- <i class="fa-solid fa-phone"></i> -->
-                            <img src="image/icons/phone.png" alt="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <!-- <img src="image/icons/phone.png" alt="phone"> -->
                             +91 9876543210
                         </a>
                     </div>
                 </div>
 
                 <div class="col-md-2 col-lg-2 col-sm-12">
-                    <a class="btn btn-primary btn-sm border-dark" href="admin/admin_login.php" role="button">
-                        <i class="fa-solid fa-user"></i>
+                    <a class="btn btn-primary btn-sm border-dark" href="<?php $siteurl ?>admin/admin_login.php" role="button">
+                        <i class="fa-sharp fa-solid fa-gears"></i>
                         Admin
                     </a>
                 </div>
@@ -122,7 +147,7 @@
 
         <nav class="navbar navbar-expand-sm navbar-dark sticky-top c-nav-bg">
             <div class="container-fluid">
-                <a class="navbar-brand nav-logo" href="index.php">
+                <a class="navbar-brand nav-logo" href="<?php $siteurl ?>">
                     <img class="img-thumbnail" src="image/logo.PNG" alt="logo">
                 </a>
                 <button class="navbar-toggler navbar" type="button" data-toggle="collapse" data-target="#mynav">
@@ -132,44 +157,66 @@
                     <ul class="navbar-nav text-center ml-5">
                         <li class="nav-item <?php if ($page == 'home') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="<?php $siteurl ?>">Home</a>
                         </li>
                         <li class="nav-item <?php if ($page == 'services') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="<?php $siteurl ?>services.php"> Services</a>
                         </li>
                         <li class="nav-item <?php if ($page == 'enroll') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="<?php $siteurl ?>enroll.php">Enroll</a>
                         </li>
                         <li class="nav-item <?php if ($page == 'gallery') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="<?php $siteurl ?>gallery.php">Gallery</a>
                         </li>
                         <li class="nav-item <?php if ($page == 'about') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="<?php $siteurl ?>about.php">About</a>
                         </li>
                         <li class="nav-item <?php if ($page == 'contact') {
                                                 echo 'active';
-                                            } ?> ml-5">
+                                            } ?> ml-4">
                             <a class="nav-link" href="<?php $siteurl ?>contact.php">Contact</a>
                         </li>
+                        <li class="nav-item <?php if ($page == 'feedback') {
+                                                echo 'active';
+                                            } ?> ml-4">
+                            <a class="nav-link" href="<?php $siteurl ?>feedback.php">Feedback</a>
+                        </li>
                     </ul>
-                    <div class="in-lg ml-5 pl-5">
-                        <a class="btn btn-primary btn-sm border-dark ml-4" href="#" role="button">
+                    <div class="in-lg ml-5 mt-2">
+                        <?php
+                        if (!$loggedin) {
+                            echo '<a class="btn btn-primary btn-sm border-dark mb-2" href="' . $siteurl . 'user_signup.php" role="button">
                             <i class="fa-solid fa-user"></i>
                             Sign-up
                         </a>
-                        <a class="btn btn-primary btn-sm border-dark ml-4" href="#" role="button">
-                            <i class="fa-solid fa-user"></i>
+                        <a class="btn btn-primary btn-sm border-dark ml-4 mb-2" href="' . $siteurl . 'user_login.php" role="button">
+                            <i class="fa-solid fa-right-to-bracket"></i>
                             Log-in
-                        </a>
+                        </a>';
+                        }
+                        if ($loggedin) {
+                        ?>
+                            <ul>
+                                <li>
+                                    <h5><?php echo $_SESSION['username']; ?></h5>
+                                </li>
+                            </ul>
+                        <?php
+                            echo '<a class="btn btn-primary btn-sm border-dark ml-3 mb-2" href="' . $siteurl . 'user_logout.php" role="button">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            Logout
+                        </a>';
+                        }
+                        ?>
                     </div>
 
                 </div>

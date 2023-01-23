@@ -1,8 +1,10 @@
     <?php
+    include "connection/connect.php";
+    error_reporting(E_ALL ^ E_NOTICE);
+
     $page = 'contact';
     require "Layouts/common_header.php";
 
-    include "connection/connect.php";
     ?>
 
     <?php

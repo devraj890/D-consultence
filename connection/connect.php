@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $siteurl = "http://localhost/D-consulting/";
 $servername = "localhost";

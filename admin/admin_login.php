@@ -2,7 +2,10 @@
 
 include "../connection/connect.php";
 
-session_start();
+// session_start();
+if (!isset($_SESSION)) {
+    session_start();
+} 
 
 ?>
 
@@ -24,7 +27,7 @@ session_start();
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/login.css">
 
     <style>
         .formerror 
@@ -46,7 +49,7 @@ session_start();
     <script src="../js/popper.min.js"></script>
     <script src="../js/all.min.js"></script>
     <!--link for font awesome 6.1..-->
-    <script src="login.js"></script>
+    <script src="../js/login.js"></script>
 
 </head>
 
@@ -122,7 +125,7 @@ if (isset($_POST['login'])) {
 
     if ($count > 0) {
         $_SESSION['username'] = $username;
-        header('location:admin_dashboard.php');
+        header('location:'.$siteurl.'admin/');
     } else {
         echo "<script> alert('Incorrect username and password'); </script> ";
     }
