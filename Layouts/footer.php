@@ -73,7 +73,7 @@
                                     <div class="f-toolbar-contact">
                                         <a href="tel:+919786543210 ">
                                             <i class="fa-solid fa-phone"></i>
-                                            +91 9876543210
+                                            +91 000000000
                                         </a>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@
                                 <h3>Office</h3>
                                 <a href="#">
                                     <i class="fas fa-location-dot"></i>
-                                    3/2, Nagziri Ujjain, Madhya Pradesh 456789.
+                                    3/2 Ujjain, Madhya Pradesh 456789.
                                 </a>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                 <div class="col-md-12 col-sm-12">
                     <div class="f-nm">
                         <p>Copyright © 2022, All rights reserved, by D Consulting.</p>
-                        <p>Design By Farukh Khan</p>
+                        <p>Design By dev</p>
                     </div>
                 </div>
             </div>

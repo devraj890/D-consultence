@@ -4,7 +4,7 @@
             <div class="col-md-12 col-sm-12">
                 <div class="f-nm">
                     <p>Copyright © 2022, All rights reserved, by D Consulting.</p>
-                    <p>Design By <a href="#"> Farukh Khan</a></p>
+                    <p>Design By <a href="#">dev</a></p>
                 </div>
             </div>
         </div>

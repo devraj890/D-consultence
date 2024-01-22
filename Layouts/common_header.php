@@ -130,7 +130,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <div class="toolbar-contact align-center">
                         <a href="tel:+919786543210 ">
                             <i class="fa-solid fa-phone"></i>
-                            +91 9876543210
+                            +91 0000000
                         </a>
                     </div>
                 </div>
